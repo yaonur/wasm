@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <script type="module">
+		WebAssembly.instantiateStreaming(fetch('math.wasm'))
+			.then(obj => {
+				console.log(obj.instance.exports.square(2));
+			});
+	</script>
+  </head>
+  <body>
+	<h1>Home</h1>
+	<a href="/login">Login</a>
+	<a href="/register">Register</a>
+  </body>
+</html>
