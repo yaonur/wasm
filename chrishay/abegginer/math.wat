@@ -7,5 +7,5 @@
 		local.get 0
 		i32.mul
 	)
-	(export "squre" (func $square))
+	(export "square" (func $square))
 )
